@@ -7,7 +7,7 @@
     <link href="<?php echo base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet"> 
   </head> 
   <body>
-  <section class="vh-100" style="background-color: #9A616D;">
+  <section class="vh-100" style="background-color: #40E0D0;">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col col-xl-10">
