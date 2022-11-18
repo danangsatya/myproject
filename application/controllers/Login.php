@@ -27,7 +27,8 @@ function index(){
         redirect(base_url("index.php/admin"));
 
     }else{
-        echo "Username dan password salah !";
+        $this->session->set_flashdata('category_error', 'login salah.');
+        redirect(base_url("login"));
     }
 }
 

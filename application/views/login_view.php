@@ -5,6 +5,10 @@
     <title>This Is Login View</title> 
     <!-- load bootstrap css file --> 
     <link href="<?php echo base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet"> 
+    <?php if($this->session->flashdata('msg')){ ?>
+$('.confirm-div').html('
+<?php echo $this->session->flashdata('msg'); ?>').show();
+<?php } ?>
   </head> 
   <body>
   <section class="vh-100" style="background-color: #40E0D0;">
@@ -38,6 +42,9 @@
                   </div>
 
                   <div class="pt-1 mb-4">
+                  <?php if ($this->session->flashdata('category_error')) { ?>
+                  <div class="alert alert-danger"> <?= $this->session->flashdata('category_error') ?> </div>
+                  <?php } ?>
                     <button class="btn btn-dark btn-lg btn-block" input type="submit" value="Login">Login</button>
                   </div>
 
