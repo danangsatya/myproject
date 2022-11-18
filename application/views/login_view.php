@@ -42,9 +42,10 @@ $('.confirm-div').html('
                   </div>
 
                   <div class="pt-1 mb-4">
-                  <?php if ($this->session->flashdata('category_error')) { ?>
-                  <div class="alert alert-danger"> <?= $this->session->flashdata('category_error') ?> </div>
-                  <?php } ?>
+                          <?php if ($this->session->flashdata('category_error')) { ?>
+                          <div class="alert alert-danger"> <?= $this->session->flashdata('category_error') ?> 
+                          </div>
+                          <?php } ?>
                     <button class="btn btn-dark btn-lg btn-block" input type="submit" value="Login">Login</button>
                   </div>
 
