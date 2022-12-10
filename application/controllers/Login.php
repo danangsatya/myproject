@@ -24,7 +24,7 @@ function index(){
 
         $this->session->set_userdata($data_session);
 
-        redirect(base_url("index.php/admin"));
+        redirect(base_url("admin"));
 
     }else{
         $this->session->set_flashdata('category_error', 'login salah.');
