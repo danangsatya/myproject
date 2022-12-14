@@ -10,7 +10,7 @@
                         </li>
                         <li> <a class="waves-effect waves-dark" href="<?= site_url('admin/user') ?>" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">User</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="icon-material.html" aria-expanded="false"><i class="mdi mdi-emoticon"></i><span class="hide-menu">Icons</span></a>
+                        <li> <a class="waves-effect waves-dark" href="<?= site_url('admin/product') ?>" aria-expanded="false"><i class="mdi mdi-emoticon"></i><span class="hide-menu">Product</span></a>
                         </li>
                         <li> <a class="waves-effect waves-dark" href="map-google.html" aria-expanded="false"><i class="mdi mdi-earth"></i><span class="hide-menu">Google Map</span></a>
                         </li>
