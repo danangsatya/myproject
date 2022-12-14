@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-a
+
 <head>
-	<?php $this->load->view('admin/_partials/head.php') ?>   
+	<?php $this->load->view('admin/_partials/head.php') ?>  
 </head>
 
 <body class="fix-header fix-sidebar card-no-border">
+
 	<div id="main-wrapper">
 		<main class="main">
 			<?php $this->load->view('admin/_partials/side_nav.php') ?>
@@ -30,16 +31,16 @@ a
 			<?php $this->load->view('admin/_partials/footer.php') ?>
 		</main>
 	</div>
-<script src="../assets/plugins/jquery/jquery.min.js"></script>
+	<script src="../assets/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
-<script src="../assets/plugins/bootstrap/js/tether.min.js"></script>
-<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/tether.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
     <script src="js/jquery.slimscroll.js"></script>
     <!--Wave Effects -->
     <script src="js/waves.js"></script>
     <!--Menu sidebar -->
-<script src="js/sidebarmenu.js"></script>
+    <script src="js/sidebarmenu.js"></script>
     <!--stickey kit -->
     <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
     <!--Custom JavaScript -->
