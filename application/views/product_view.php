@@ -8,7 +8,7 @@
   </head> 
   <body>  
     <div class="container"> 
-        <h1><center>Product List</center></h1> 
+      <h1><center>Product List</center></h1> 
       <table class="table table-striped"> 
         <thead> 
           <tr> 

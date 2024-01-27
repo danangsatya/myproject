@@ -23,9 +23,22 @@
                 	</div>
 				</div>
 				<div class="content">
-					<h1>Overview</h1>
-					<p><b>13</b> <span class="text-gray">Post</span></p>
-					<p><b>11</b> <span class="text-gray">Feedback</span></p>	
+                    <h1><center>Table User</center></h1> 
+                        <table class="table table-striped"> 
+                         <thead> 
+                            <tr> 
+                                <th scope="col">#</th> 
+                                <th scope="col">username</th> 
+                            </tr> 
+                        </thead> 
+                        <?php 
+          $count = 0; 
+          foreach ($product->result() as $row) : 
+            $count++; 
+        ?> 
+                        <?php endforeach;?> 
+                        </tbody> 
+                        </table>     
 				</div>
 			</div>
 			<?php $this->load->view('admin/_partials/footer.php') ?>
