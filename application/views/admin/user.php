@@ -15,29 +15,34 @@
 			<div class="container-fluid">
                 <div class="row page-titles">
                     <div class="col-md-5 col-8 align-self-center">
-                        <h3 class="text-themecolor m-b-0 m-t-0">Profile</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Profile</li>
+                            <li class="breadcrumb-item active">User View</li>
                         </ol>
                 	</div>
 				</div>
 				<div class="content">
-                    <h1><center>Table User</center></h1> 
+                    <body>
+                    <h1><center>Table User admin</center></h1> 
                         <table class="table table-striped"> 
                          <thead> 
                             <tr> 
-                                <th scope="col">#</th> 
+                                <th scope="col">No</th> 
                                 <th scope="col">username</th> 
+                               
                             </tr> 
                         </thead> 
                         <?php 
-          $count = 0; 
-          foreach ($product->result() as $row) : 
-            $count++; 
-        ?> 
+                            $count = 0; 
+                            foreach ($admin->result() as $row ) : 
+                            $count++; 
+                        ?> 
+                        <tr> 
+                            <th scope="row"><?php echo $count;?></th> 
+                            <td><?php echo $row->username;?></td> 
+                        </tr
                         <?php endforeach;?> 
-                        </tbody> 
+                    </tbody> 
                         </table>     
 				</div>
 			</div>
