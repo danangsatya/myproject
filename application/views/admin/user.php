@@ -39,11 +39,17 @@
                         ?> 
                         <tr> 
                             <th scope="row"><?php echo $count;?></th> 
-                            <td><?php echo $row->username;?></td> 
-                        </tr
+                            <td><?php echo $row->username;?></td>
+                        <td>		 
+					        <a href="<?php echo site_url('admin/user/delete/'.$row->id_admin);?>" class="btn btn-sm btn-danger">Delete</a>		 
+					        <a href="<?php echo site_url('admin/user/get_edit/'.$row->id_admin);?>" class="btn btn-sm btn-danger">Update</a>
+					    </td>
+                        </tr>
                         <?php endforeach;?> 
                     </tbody> 
-                        </table>     
+                        </table> 
+                        <a href="<?php echo site_url('admin/user/add_new');?>" class="btn btn-sm btn-danger">add user</a>	
+                        
 				</div>
 			</div>
 			<?php $this->load->view('admin/_partials/footer.php') ?>

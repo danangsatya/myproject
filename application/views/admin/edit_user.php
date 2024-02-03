@@ -18,19 +18,19 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
                             <li class="breadcrumb-item active">User View</li>
-                            <li class="breadcrumb-item active">add user</li>
+                            <li class="breadcrumb-item active">edit user</li>
                         </ol>
                 	</div>
 				</div>
 				<div class="content">
                     <body>
-                        <h3><center>Tambah User admin</center></h3> 
+                        <h3><center>edit user</center></h3> 
                         <table>
                         <div class="col-md-6 offset-md-3"> 
 				        <form action="<?php echo site_url('admin/User/save');?>" method="post"> 
 				        <div class="form-group"> 
 					        <label>username</label> 
-					        <input type="text" class="form-control" name="username" placeholder="username"> 
+					        <input type="text" class="form-control" name="username" value="<?php echo $username;?>" placeholder="username"> 
 				        </div> 
 				        <div class="form-group"> 
 					        <label>Password</label> 
